@@ -1,0 +1,17 @@
+
+spring:
+  data:
+    mongodb:
+      database: OOMS
+      port: 27017
+      host: localhost
+      auto-index-creation: true
+---
+spring:
+  profiles:
+    active: local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
